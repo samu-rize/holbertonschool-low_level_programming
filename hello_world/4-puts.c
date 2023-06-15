@@ -1,6 +1,12 @@
 #include <stdio.h>
-int main(void) {
-   
-   put("Programming is like building a multilingual puzzle");
-   return 0;
+
+/**
+ * main - rogram that prints
+ * Return: always ZERO
+*/
+
+int main(void)
+{
+	puts("Programming is like building a multilingual puzzle");
+	return (0);
 }
