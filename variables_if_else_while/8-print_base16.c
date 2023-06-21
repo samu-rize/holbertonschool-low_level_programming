@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program prints the alphabet in lowercase, followed by a new line.
+ * main - program that prints all the numbers of base 16 in lowercase, followed by a new line.
  * Return: always ZERO
 **/
 int main(void)
