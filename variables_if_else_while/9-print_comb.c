@@ -23,6 +23,6 @@ int main(void)
 		putchar(44);
 		i++;
 	}
-	putchar(58);
+	putchar(57);
 	return (0);
 }
