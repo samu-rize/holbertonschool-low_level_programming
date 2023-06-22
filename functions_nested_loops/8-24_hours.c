@@ -31,7 +31,8 @@ void jack_bauer(void)
 			if (b == 1)
 				break;
 			}
-
+			if (b == 1)
+				break;
 		}
 		if (b == 1)
 			break;
