@@ -20,6 +20,7 @@ void jack_bauer(void)
 					_putchar (':');
 					_putchar ('0' + m1);
 					_putchar ('0' + m);
+					_putchar ('\n');
 					if (h1 == 2 && h == 3 && m1 == 5 && m == 9)
 						b = 1;
 					if (b == 1)
