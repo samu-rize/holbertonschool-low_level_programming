@@ -23,4 +23,9 @@ void print_triangle(int s)
 		}
 		_putchar('\n');
 	}
+	if (s < 1)
+	{
+		_putchar('\n');
+	}
+	
 }
