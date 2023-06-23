@@ -8,9 +8,13 @@ void print_diagonal(int n)
 {
 	int i;
 
-	for (i = n; i > 0; i--)
+	if (n > 0)
 	{
-		_putchar('\\');
+		for (i = n; i > 0; i--)
+		{
+			_putchar (' ');
+		}
+		_putchar ('\\');
 	}
 	_putchar ('\n');
 }
