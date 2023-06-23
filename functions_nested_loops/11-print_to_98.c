@@ -38,8 +38,17 @@ void print_to_98(int n)
 	{
 		for (i = n; i > 97; i++)
 		{
-			_putchar ('0' + i / 10);
-			_putchar ('0' + i % 10);
+			if (i > 99)
+			{
+				_putchar ('0' + i / 100);
+				_putchar ('0' + (i % 100) / 10);
+				_putchar ('0' + i % 10);
+			}
+			else
+			{
+				_putchar ('0' + i / 10);
+				_putchar ('0' + i % 10);
+			}
 				if (i != 98)
 				{
 					_putchar (',');
