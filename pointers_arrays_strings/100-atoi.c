@@ -47,10 +47,9 @@ int negative(char *c)
 
 int _atoi(char *s)
 {
-	int i, rsl = 0, l, neg = negative(s);
+	int i, rsl = 0, neg = negative(s);
 
-	l = length(s);
-	for (i = 0; s[i] < l; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{	
 		if (s[i] >= '0' && s[i] <= '9')
 			rsl = rsl * 10 + (s[i] -'0');
