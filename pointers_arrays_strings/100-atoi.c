@@ -9,24 +9,17 @@
 
 int negative(char *c)
 {
-	int i, neg = 0;
+	int i = 0, neg = 1;
 
-	while (c[i] != '\0' && c [i] > '9' || c[i] < '0')
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (c[i] == '-')
-		{
 			neg++;
-		}
-		i++;
 	}
-	if (neg % 2 == 0)
-	{
-		neg = 1;
-	}
-	else
-	{
+	if (neg % 2 != 0)
 		neg = -1;
-	}
+	else
+		neg = 1;
 	return (neg);
 }
 
