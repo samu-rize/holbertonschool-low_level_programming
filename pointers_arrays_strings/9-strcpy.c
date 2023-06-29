@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strcpy - Prints a string in reverse
  * @dest: The input string
@@ -9,7 +10,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i, j;
 
-	j = _strlen (src);
+	j = strlen(src);
 	for (i = 0; i < j; i++)
 	{
 		dest[i] = src[i];
