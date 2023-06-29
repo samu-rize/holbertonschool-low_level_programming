@@ -1,21 +1,6 @@
 #include "main.h"
 
 /**
- * length - check the code
- * @s: integer
- * Return: integer.
-*/
-int length(char *s)
-{
-	int a = 0;
-
-	while (s[a] != '\0')
-		a++;
-	return (a);
-}
-
-
-/**
  * negative - calculate how many (-)
  * in the given string
  * @c: The input string
@@ -24,10 +9,9 @@ int length(char *s)
 
 int negative(char *c)
 {
-	int i, l, neg = 0;
+	int i, neg = 0;
 
-	l = length(c);
-	for (i = 0; c[i] < l; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (c[i] == '-')
 			neg++;
