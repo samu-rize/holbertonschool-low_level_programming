@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_array - Prints a string in reverse
- * @a: The input string
- * @n: The input string
+ * @a: The input integer
+ * @n: The input integer
  * Return: void
  */
 void print_array(int *a, int n)
