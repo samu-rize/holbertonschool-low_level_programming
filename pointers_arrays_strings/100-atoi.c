@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * length - check the code
+ * @s: integer
+ * Return: integer.
+*/
+int length(char *s)
+{
+	int a = 0;
+
+	while (s[a] != '\0')
+		a++;
+	return (a);
+}
+
+
+/**
  * negative - calculate how many (-)
  * in the given string
  * @c: The input string
@@ -9,9 +24,10 @@
 
 int negative(char *c)
 {
-	int i, neg = 0;
+	int i, l, neg = 0;
 
-	for (i = 0; c[i] != '\0'; i++)
+	l = length(c);
+	for (i = 0; c[i] < l; i++)
 	{
 		if (c[i] == '-')
 			neg++;
@@ -31,9 +47,10 @@ int negative(char *c)
 
 int _atoi(char *s)
 {
-	int i, rsl = 0, neg = negative(s);
+	int i, rsl = 0, l, neg = negative(s);
 
-	for (i = 0; s[i] != '\0'; i++)
+	l = length(s);
+	for (i = 0; s[i] < l; i++)
 	{	
 		if (s[i] >= '0' && s[i] <= '9')
 			rsl = rsl * 10 + (s[i] -'0');
