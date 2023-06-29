@@ -14,12 +14,12 @@ int negative(char *c)
 	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (c[i] == '-')
-			neg += 1;
+			neg++;
 	}
-	if (neg % 2)
-		neg = 1;
-	else
+	if (neg % 2 != 0)
 		neg = -1;
+	else
+		neg = 1;
 	return (neg);
 }
 
@@ -31,14 +31,12 @@ int negative(char *c)
 
 int _atoi(char *s)
 {
-	int i, rsl, neg;
+	int i, rsl = 0, neg = negative(s);
 
-	rsl = 0;
-	neg = negative(s);
 	for (i = 0; s[i] != '\0'; i++)
 	{	
 		if (s[i] >= '0' && s[i] <= '9')
-			rsl *= 10 + s[i] -'0';
+			rsl *= 10 + (s[i] -'0');
 	}
 	return (rsl * neg);
 }
