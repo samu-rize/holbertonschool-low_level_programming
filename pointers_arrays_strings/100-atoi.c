@@ -9,7 +9,7 @@
 
 int negative(char *c)
 {
-	int i = 0, neg = 1;
+	int i, neg = 0;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
