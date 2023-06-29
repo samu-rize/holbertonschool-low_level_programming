@@ -11,7 +11,7 @@ int negative(char *c)
 {
 	int i, neg = 0;
 
-	for (i = 0; c[i] != '0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (c[i] == '-')
 			neg += 1;
