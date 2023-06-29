@@ -37,6 +37,11 @@ int _atoi(char *s)
 	{	
 		if (s[i] >= '0' && s[i] <= '9')
 			rsl *= 10 + (s[i] -'0');
+		else if (rsl > 0)
+		{
+			break;
+		}
+		
 	}
 	return (rsl * neg);
 }
