@@ -34,14 +34,13 @@ int _atoi(char *s)
 	int i, rsl = 0, neg = negative(s);
 
 	for (i = 0; s[i] != '\0'; i++)
-	{	
+	{
 		if (s[i] >= '0' && s[i] <= '9')
-			rsl = rsl * 10 + (s[i] -'0');
+			rsl = rsl * 10 + (s[i] - '0');
 		else if (rsl > 0)
 		{
 			break;
 		}
-		
 	}
 	return (rsl * neg);
 }
