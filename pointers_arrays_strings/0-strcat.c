@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strcat - concatenates two strings.
+ * @dest: array of chars
+ * @src: array of chars
  * Return: Always 0.
  */
 
@@ -17,7 +18,7 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[s] != '\0')
 	{
-		dest[d] = src[s]; 
+		dest[d] = src[s];
 		d++;
 		s++;
 	}
