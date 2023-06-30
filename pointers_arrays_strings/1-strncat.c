@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * @dest: array of chars
  * @src: array of chars
  * @n: integer
