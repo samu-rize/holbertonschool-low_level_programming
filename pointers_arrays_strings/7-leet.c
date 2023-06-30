@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * string_toupper - changes all lowercase letters of a string to uppercase.
+ * leet - encodes a string into 1337.
  * @str: array of chars
  *
  * Return: array
  */
-char *string_toupper(char *str)
+char *leet(char *str)
 {
 	char *ptr = str;
 
