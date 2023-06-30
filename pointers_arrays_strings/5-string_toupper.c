@@ -11,9 +11,25 @@ char *string_toupper(char *str)
 
 	while (*str != '\0')
 	{
-		if (*str >= 'a' && *str <= 'z')
+		if (*str == 'a' || *str == 'A')
 		{
-			*str = *str - 'a' + 'A';
+			*str = '4';
+		}
+		if (*str == 'e' || *str == 'E')
+		{
+			*str = '3';
+		}
+		if (*str == 'o' || *str == 'O')
+		{
+			*str = '0';
+		}
+		if (*str == 't' || *str == 'T')
+		{
+			*str = '7';
+		}
+		if (*str == 'l' || *str == 'L')
+		{
+			*str = '1';
 		}
 		str++;
 	}
