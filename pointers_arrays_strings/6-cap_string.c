@@ -12,7 +12,7 @@ char *cap_string(char *str)
 
 	while (*str != '\0')
 	{
-		if (*str == ' ')
+		if (*str == ' ' || *str == '.')
 		{
 			i = 1;
 		}
@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		{
 			*str = *str - 'a' + 'A';
 		}
-		if (*str >= 'A' && *str <= 'Z' && i == 1)
+		if (((*str >= 'A' && *str <= 'Z') || (*str >= '0' && *str <= '9')) && (i == 1))
 		{
 			i = 0;
 		}
