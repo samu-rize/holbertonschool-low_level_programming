@@ -1,4 +1,28 @@
-//#include "main.h"
+#include "main.h"
+
+/**
+ * _atoi - convert a string to an integer.
+ * @s: char
+ * Return: int
+ */
+
+int _atoi(char *s)
+{
+	int rsl = 0, i, sign = 1;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == '-')
+		{
+			sign *= -1;
+		}
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			rsl = rsl * 10 + s[i] - '0';
+		}
+	}
+	return (rsl * sign);
+}
 
 /**
  * negative - calculate how many (-)
@@ -45,29 +69,3 @@ int _atoi(char *s)
 	return (rsl * neg);
 }
 */
-
-#include "main.h"
-
-/**
- * _atoi - convert a string to an integer.
- * @s: char
- * Return: int
- */
-
-int _atoi(char *s)
-{
-	int rsl = 0, i, sign = 1;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == '-')
-		{
-			sign *= -1;
-		}
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			rsl = rsl * 10 + s[i] - '0';
-		}
-	}
-	return (rsl * sign);
-}
