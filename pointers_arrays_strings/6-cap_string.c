@@ -11,16 +11,15 @@ char *cap_string(char *str)
 
 	while (*str != '\0')
 	{
-        if (*str == ' ')
-        {
-            str++;
-        }
-        
-		if (*str >= 'a' && *str <= 'z')
+		if (*str == ' ')
 		{
-			*str = *str - 'a' + 'A';
+			str++;
+			if (*str >= 'a' && *str <= 'z')
+			{
+				*str = *str - 'a' + 'A';
+			}
+			str++;
 		}
-		str++;
 	}
 	return (ptr);
 }
