@@ -7,21 +7,22 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0;
 	char *ptr = str;
 
 	while (*str != '\0')
 	{
+		int i = 0;
+	
 		if (*str == ' ')
 		{
 			i = 1;
+		}
 		if (*str >= 'a' && *str <= 'z' && i == 1)
 		{
 			*str = *str - 'a' + 'A';
 			i = 0;
 		}
 		str++;
-		}
 	}
 	return (ptr);
 }
