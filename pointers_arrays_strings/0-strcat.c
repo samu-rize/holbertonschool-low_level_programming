@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -8,16 +9,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
+	int d = 0, s = 0;
 
-	while (*dest)
+	while (dest[d] != '\0')
 	{
-		i++;
+		d++;
 	}
-	while (*src)
+	while (src[s] != '\0')
 	{
-		dest[i] = *src; 
-		i++;
+		dest[d] = src[s]; 
+		d++;
+		s++;
 	}
 	return (dest);
 }
