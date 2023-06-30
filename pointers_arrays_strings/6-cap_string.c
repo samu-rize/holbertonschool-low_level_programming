@@ -12,7 +12,7 @@ char *cap_string(char *str)
 
 	while (*str != '\0')
 	{
-		if (*str == ' ' || *str == '.')
+		if (*str == ' ' || *str == '.' || *str == '	')
 		{
 			i = 1;
 		}
