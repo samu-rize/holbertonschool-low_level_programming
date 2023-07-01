@@ -26,13 +26,9 @@ char *_strchr(char *s, char c)
 	}
 	if (j == 0)
 	{
-		for (; s[i] != '\0'; i++, j++)
+		for (j = 0; s[j] != '\0'; i++, j++)
 		{
 			s[j] = s[i];
-		}
-		for (; j < i; j++)
-		{
-			s[j] = '\0';
 		}
 	}
 	return (s);
