@@ -17,18 +17,23 @@ char *_strchr(char *s, char c)
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-        {
-            j = 1;
-        }
-        if (j == 1)
-        {
-            putchar(s[i]);
-        }
-        i++;
+		{
+			j = 0;
+			break;
+			i++;
+		}
 	}
-    if (j == 1)
-    {
-        putchar('\n');
-    }    
+
+	if (j == 0)
+	{
+		for (; s[i] != '\0'; i++, j++)
+		{
+			s[j] = s[i];
+		}
+		for (; j < i; j++)
+		{
+			s[j] = '\0';
+		}
+	}
 	return (s);
 }
