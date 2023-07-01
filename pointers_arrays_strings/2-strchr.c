@@ -14,6 +14,7 @@ char *_strchr(char *s, char c)
 	unsigned short int i, j;
 
 	i = 0;
+	j = 1;
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
@@ -23,7 +24,6 @@ char *_strchr(char *s, char c)
 			i++;
 		}
 	}
-
 	if (j == 0)
 	{
 		for (; s[i] != '\0'; i++, j++)
