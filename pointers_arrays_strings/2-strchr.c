@@ -11,25 +11,18 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned short int i, j;
+	unsigned short int i;
 
-	i = 0;
-	j = 1;
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			j = 0;
-			break;
+			return (s + 1);
 		}
-		i++;
 	}
-	if (j == 0)
+	if (c == '\0')
 	{
-		for (j = 0; s[j] != '\0'; i++, j++)
-		{
-			s[j] = s[i];
-		}
+		return (s + 1);
 	}
 	return (s);
 }
