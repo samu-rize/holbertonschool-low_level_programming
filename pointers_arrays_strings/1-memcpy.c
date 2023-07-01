@@ -2,23 +2,23 @@
 #include <stdio.h>
 
 /**
- * _memset - prints buffer in hexa
- * @s: a pointer to the memory area to be filled.
- * @b: the constant byte to fill the memory with.
+ * _memcpy - prints buffer in hexa
+ * @dest: a pointer to the memory area to be filled.
+ * @src: the constant byte to fill the memory with.
  * @n: the number of bytes to be filled.
  *
  * Return: char.
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
 	i = 0;
 	while (i < n)
 	{
-		s[i] = b;
+		dest[i] = src;
 		i++;
 	}
-	return (s);
+	return (dest);
 }
