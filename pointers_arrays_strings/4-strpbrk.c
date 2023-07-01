@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strspn - concatenates two strings.
+ * _strpbrk - concatenates two strings.
  * @s: array of chars
  * @a: array of chars
  * Return: Always 0.
