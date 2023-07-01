@@ -5,7 +5,6 @@
  * _strchr - locates a character in a string.
  * @s: a pointer to the memory area to be filled.
  * @c: char.
- * 
  * Return: char.
  */
 
