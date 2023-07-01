@@ -8,7 +8,7 @@
  * Return: Always 0.
  */
 
-unsigned int _strspn(char *s, char *a)
+char *_strpbrk(char *s, char *a)
 {
 	unsigned short int i, j;
 
