@@ -21,8 +21,8 @@ char *_strchr(char *s, char c)
 		{
 			j = 0;
 			break;
-			i++;
 		}
+		i++;
 	}
 	if (j == 0)
 	{
