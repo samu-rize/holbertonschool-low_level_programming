@@ -24,7 +24,7 @@ char *_strstr(char *s, char *a)
 				{
 					if (a[j + 1] == '\0')
 					{
-						return (s[i]);
+						return (&s[i]);
 					}
 				}
 		}
