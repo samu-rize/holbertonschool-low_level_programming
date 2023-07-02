@@ -2,12 +2,21 @@
 #include <stdio.h>
 
 /**
- * print_diagsums -  prints the chessboard.
- * @a: array of chars representing the chessboard.
- * @s: size of the array.
- * Return: Always 0.
+ * print_diagsums - Prints the sums of the diagonals of a square matrix.
+ * @a: The input array representing the square matrix.
+ * @s: The size of the matrix.
+ *
+ * Description: This function takes an array `a` representing a square matrix
+ *              of size `s` and prints the sum of the diagonals of the matrix.
+ *              It calculates the sum of the main diagonal elements by
+ *              accessing the elements using the formula `a[i * s + i]`, where
+ *              `i` is the index. Similarly, it calculates the sum of the
+ *              secondary diagonal elements by accessing the elements using
+ *              the formula `a[i * s + (s - 1 - i)]`. Finally, it uses the
+ *              `printf` function to print the sums of the diagonals.
+ *
+ * Return: void
  */
-
 void print_diagsums(int *a, int s)
 {
 	int i, j = s - 1, n = 0, m = 0;

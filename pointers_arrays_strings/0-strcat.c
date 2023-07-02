@@ -2,10 +2,14 @@
 #include <stdio.h>
 
 /**
- * _strcat - concatenates two strings.
- * @dest: array of chars
- * @src: array of chars
- * Return: Always 0.
+ * _strcat - Concatenates two strings.
+ * @dest: The destination string to be concatenated.
+ * @src: The source string to be appended to the destination.
+ *
+ * Description: This function appends the contents of the source string to
+ *              the end of the destination string.
+ *
+ * Return: A pointer to the destination string.
  */
 
 char *_strcat(char *dest, char *src)

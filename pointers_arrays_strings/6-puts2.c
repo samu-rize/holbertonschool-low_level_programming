@@ -1,11 +1,17 @@
 #include "main.h"
 #include <string.h>
+
 /**
- * puts2 - Prints a string in reverse
- * @str: The input string
+ * puts2 - Prints every other character of a string.
+ * @str: The input string.
  *
- * Return: void
+ * Description: This function prints every other character of the string `str`,
+ *              starting from the first character. It does not modify the original
+ *              string and does not return any value.
+ *
+ * Return: void.
  */
+
 void puts2(char *str)
 {
 	int i, j;

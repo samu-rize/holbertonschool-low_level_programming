@@ -1,11 +1,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- *main - Entry point
+ * main - Entry point of the program.
  *
- *Return: Always 0 (Success)
- **/
+ * Description: This program generates a random number and determines whether
+ *              it is positive, negative, or zero. It uses the srand function
+ *              to seed the random number generator with the current time. The
+ *              rand function is then used to generate a random number, which
+ *              is stored in the variable 'n'. The program then uses if-else
+ *              statements to check the value of 'n' and prints the
+ *              corresponding message.
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n;

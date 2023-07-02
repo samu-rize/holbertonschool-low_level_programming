@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - program that prints
- * Return: always ZERO
-*/
+ * main - Entry point of the program
+ *
+ * Description: This program prints the size of various data types using the sizeof operator and printf function.
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {

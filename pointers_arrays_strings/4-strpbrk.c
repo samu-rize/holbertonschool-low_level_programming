@@ -2,10 +2,17 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - concatenates two strings.
- * @s: array of chars
- * @a: array of chars
- * Return: Always 0.
+ * _strpbrk - Searches a string for any of a set of bytes.
+ * @s: The string to search.
+ * @a: The set of bytes to search for.
+ *
+ * Description: This function searches the string `s` for the first occurrence
+ *              of any character in the set of bytes `a`. It returns a pointer
+ *              to the first occurrence of a matching character in `s`, or NULL
+ *              if no match is found.
+ *
+ * Return: Pointer to the first occurrence of a matching character in `s`,
+ *         or NULL if no match is found.
  */
 
 char *_strpbrk(char *s, char *a)

@@ -2,12 +2,15 @@
 #include <stdio.h>
 
 /**
- * _memcpy - prints buffer in hexa
- * @dest: a pointer to the memory area to be filled.
- * @src: the constant byte to fill the memory with.
- * @n: the number of bytes to be filled.
+ * _memcpy - Copies a block of memory.
+ * @dest: A pointer to the destination memory area.
+ * @src: A pointer to the source memory area.
+ * @n: The number of bytes to be copied.
  *
- * Return: char.
+ * Description: This function copies the contents of the source memory area
+ *              to the destination memory area up to a specified number of bytes.
+ *
+ * Return: A pointer to the destination memory area.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)

@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * print_line - check the code
- * @n: integer
- * Return: always ZERO
+ * print_line - prints a line of underscores.
+ * @n: the number of underscores to print.
+ * Return: void
  */
+
 void print_line(int n)
 {
 	int i;

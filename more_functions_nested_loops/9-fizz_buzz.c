@@ -1,8 +1,16 @@
 #include <stdio.h>
+
 /**
- * main - check the code
- * Return: always ZERO
+ * main - Entry point of the program
+ *
+ * Description: This program prints numbers from 1 to 100.
+ *              For multiples of 3, it prints "Fizz".
+ *              For multiples of 5, it prints "Buzz".
+ *              For multiples of both 3 and 5, it prints "FizzBuzz".
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;

@@ -1,8 +1,12 @@
 #include "main.h"
+
 /**
- * jack_bauer - check the code
- * Return: always ZERO
+ * jack_bauer - Prints every minute of a day
+ *
+ * Description: This function prints every minute of a day in the format
+ * HH:MM, starting from 00:00 and ending at 23:59.
  */
+
 void jack_bauer(void)
 {
 	int m, m1, h, h1, b;

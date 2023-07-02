@@ -1,10 +1,19 @@
 #include "main.h"
+
 /**
- * leet - encodes a string into 1337.
- * @s: array of chars
+ * leet - Encodes a string into 1337.
+ * @s: The input string.
  *
- * Return: array
+ * Description: This function takes a string `s` and encodes it into 1337
+ *              by replacing certain characters with their corresponding
+ *              numerical or special character representation. The encoding
+ *              rules are defined by the `l` and `n` arrays. The original
+ *              string is modified in place and a pointer to the modified
+ *              string is returned.
+ *
+ * Return: A pointer to the modified string.
  */
+
 char *leet(char *s)
 {
 	char *p = s;

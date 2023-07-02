@@ -2,12 +2,15 @@
 #include <stdio.h>
 
 /**
- * _memset - prints buffer in hexa
- * @s: a pointer to the memory area to be filled.
- * @b: the constant byte to fill the memory with.
- * @n: the number of bytes to be filled.
+ * _memset - Fills a block of memory with a specific value.
+ * @s: A pointer to the memory area to be filled.
+ * @b: The constant byte to fill the memory with.
+ * @n: The number of bytes to be filled.
  *
- * Return: char.
+ * Description: This function fills the first 'n' bytes of the memory
+ *              pointed to by 's' with the constant byte 'b'.
+ *
+ * Return: A pointer to the memory area 's'.
  */
 
 char *_memset(char *s, char b, unsigned int n)

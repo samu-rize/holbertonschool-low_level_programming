@@ -2,11 +2,17 @@
 #include <stdio.h>
 
 /**
- * _strncpy - concatenates two strings.
- * @dest: array of chars
- * @src: array of chars
- * @n: integer
- * Return: Always 0.
+ * _strncpy - Copies a string up to a certain number of characters.
+ * @dest: Destination string.
+ * @src: Source string.
+ * @n: Maximum number of characters to copy.
+ *
+ * Description: This function copies characters from the source string 'src'
+ *              to the destination string 'dest' up to a maximum of 'n'
+ *              characters. If the length of 'src' is less than 'n', the
+ *              remaining characters in 'dest' are filled with null terminators.
+ *
+ * Return: Pointer to the destination string 'dest'.
  */
 
 char *_strncpy(char *dest, char *src, int n)

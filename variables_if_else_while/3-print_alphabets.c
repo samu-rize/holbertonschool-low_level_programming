@@ -1,9 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - program that prints the alphabet in lowercase, and then in uppercase, followed by a new line
- * Return: always ZERO
-**/
+ * main - Entry point of the program.
+ *
+ * Description: This program prints the alphabet in lowercase, followed by the
+ *              alphabet in uppercase. It uses two while loops to iterate over
+ *              the ASCII values of lowercase letters ('a' to 'z') and uppercase
+ *              letters ('A' to 'Z'). The putchar() function is used to print
+ *              each character, and the loops increment the variable 'i' to move
+ *              to the next character. Finally, a newline character is printed to
+ *              start a new line.
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int i;

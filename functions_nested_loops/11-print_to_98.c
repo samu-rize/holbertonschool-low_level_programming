@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * print_to_98 - check the code
- * @n: integer
- * Return: always ZERO
+ * print_to_98 - Prints all integers from n to 98
+ * @n: Starting integer
+ *
+ * Description: This function takes an integer n and prints all the integers
+ * from n to 98, either in increasing or decreasing order.
  */
+
 void print_to_98(int n)
 {
 	int i;

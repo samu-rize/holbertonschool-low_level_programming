@@ -1,9 +1,15 @@
 #include "main.h"
+
 /**
- * _puts - check the code
- * @str: char
- * Return: Always 0.
-*/
+ * _puts - Prints a string followed by a new line.
+ * @str: Pointer to the string to be printed.
+ *
+ * Description: This function prints the characters of the string 'str' until
+ *              it reaches the null terminator. It then prints a new line.
+ *
+ * Return: None.
+ */
+
 void _puts(char *str)
 {
 	while (*str != '\0')

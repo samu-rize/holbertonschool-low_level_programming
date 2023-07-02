@@ -1,8 +1,13 @@
 #include "main.h"
+
 /**
- * times_table - check the code
- * Return: always ZERO
+ * times_table - Prints the multiplication table
+ *
+ * Description: This function prints the multiplication table from 0 to 9.
+ * Each row represents a number, and each column represents the product of
+ * that number with the row number.
  */
+
 void times_table(void)
 {
 	int i, j, r, r1;

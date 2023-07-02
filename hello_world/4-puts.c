@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - rogram that prints
- * Return: always ZERO
-*/
+ * main - Entry point of the program
+ *
+ * Description: This program prints a specific string using the puts function.
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {

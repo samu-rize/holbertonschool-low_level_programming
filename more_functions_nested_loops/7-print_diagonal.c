@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * print_diagonal - check the code
- * @n: integer
- * Return: always ZERO
+ * print_diagonal - prints a diagonal line of backslashes.
+ * @n: the number of backslashes to print.
+ * Return: void
  */
+
 void print_diagonal(int n)
 {
 	int i, j;

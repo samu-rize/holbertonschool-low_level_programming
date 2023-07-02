@@ -1,10 +1,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - ls
- * Return: always ZERO
-**/
+ * main - Entry point of the program.
+ *
+ * Description: This program generates a random number and determines the last
+ *              digit of that number. It uses the srand function to seed the
+ *              random number generator with the current time. The rand function
+ *              is then used to generate a random number, which is stored in the
+ *              variable 'n'. The last digit of 'n' is determined by taking the
+ *              modulo (%) of 'n' with 10 and storing it in the variable 'm'.
+ *              The program then uses if-else statements to check the value of
+ *              'm' and prints the corresponding message.
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
