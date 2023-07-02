@@ -27,7 +27,7 @@ char *_strstr(char *s, char *a)
 				i++;
 				if (n == c)
 				{
-					return(&s[i - n]);
+					return (&s[i - n]);
 				}
 			}
 		}
