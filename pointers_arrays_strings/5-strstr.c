@@ -18,7 +18,7 @@ char *_strstr(char *s, char *a)
 	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == a[j])
+		if (s[i] == a[0])
 		{
 			for (j = 0; a[j] == s[i + j]; j++)
 				{
