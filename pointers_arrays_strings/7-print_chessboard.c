@@ -15,11 +15,11 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; a[j][i] != '\0'; j++)
 		{
-			if ((a[i][j] >= 'A' && a[i][j] <= 'Z') ||
-			(a[i][j] >= 'a' && a[i][j] <= 'z') ||
-			(a[i][j] == ' '))
+			if ((a[j][i] >= 'A' && a[j][i] <= 'Z') ||
+			(a[j][i] >= 'a' && a[j][i] <= 'z') ||
+			(a[j][i] == ' '))
 			{
-				putchar (a[i][j]);
+				putchar (a[j][i]);
 			}
 		}
 		putchar ('\n');
