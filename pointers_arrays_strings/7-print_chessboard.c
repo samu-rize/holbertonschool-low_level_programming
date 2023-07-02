@@ -9,20 +9,19 @@
 
 void print_chessboard(char (*a)[8])
 {
-	unsigned short int i;
+	unsigned short int i, j;
 
-	while (*a)
+	for (i = 0; i < 8; i++)
 	{
-		for (i = 0; i < 8; i++)
+		for (j = 0; a[i][j] != '\0'; j++)
 		{
-			if ((*a[i] >= 'A' && *a[i] <= 'Z') ||
-			(*a[i] >= 'a' && *a[i] <= 'z') ||
-			(*a[i] == ' '))
+			if ((a[i][j] >= 'A' && a[i][j] <= 'Z') ||
+			(a[i][j] >= 'a' && a[i][j] <= 'z') ||
+			(a[i][j] == ' '))
 			{
-				putchar (*a[i]);
+				putchar (a[i][j]);
 			}
 		}
 		putchar ('\n');
-	a++;
 	}
 }
