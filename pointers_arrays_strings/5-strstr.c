@@ -21,12 +21,12 @@ char *_strstr(char *s, char *a)
 		if (s[i] == a[0])
 		{
 			for (j = 0; a[j] == s[i + j]; j++)
+			{
+				if (a[j + 1] == '\0')
 				{
-					if (a[j + 1] == '\0')
-					{
-						return (&s[i]);
-					}
+					return (&s[i]);
 				}
+			}
 		}
 	}
 	return (NULL);
