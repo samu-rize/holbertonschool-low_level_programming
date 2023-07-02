@@ -16,7 +16,7 @@ void print_diagsums(int *a, int s)
 	{
 		n += *(a + i * s + i);
 	}
-	for (i = 0; i < s && j > 0; i++, j--)
+	for (i = 0; i < s && j >= 0; i++, j--)
 	{
 		m += *(a + i * s + j);
 	}
