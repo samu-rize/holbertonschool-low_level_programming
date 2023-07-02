@@ -10,26 +10,23 @@
 
 char *_strstr(char *s, char *a)
 {
-	unsigned short int i, j, c, n = 0;
+	unsigned short int i, j;
 
-	for (c = 0; a[c] != '\0'; c++)
+	if (*a == '\0')
+	{
+		return (s);
+	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; a[j] != '\0'; j++)
+		if (s[i] == a[j])
 		{
-			if (s[i] != a[j])
-			{
-				n = 0;
-			}
-			else
-			{
-				n++;
-				i++;
-				if (n == c)
+			for (j = 0; a[j] == s[i + j]; j++)
 				{
-					return (&s[i - n]);
+					if (a[j + 1] == '\0')
+					{
+						return (s[i]);
+					}
 				}
-			}
 		}
 	}
 	return (NULL);
