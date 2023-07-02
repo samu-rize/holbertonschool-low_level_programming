@@ -10,9 +10,8 @@
 
 char *_strstr(char *s, char *a)
 {
-	unsigned short int i, j, c, n;
+	unsigned short int i, j, c, n = 0;
 
-	n = 0;
 	for (c = 0; a[c] != '\0'; c++)
 	for (i = 0; s[i] != '\0'; i++)
 	{
