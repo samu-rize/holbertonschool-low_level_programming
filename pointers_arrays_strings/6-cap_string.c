@@ -5,8 +5,8 @@
  * @str: The string to capitalize.
  *
  * Description: This function capitalizes the first character of each word in
- *              the string `str`. Words are delimited by spaces, tabs, or periods.
- *              It modifies the original string and returns a pointer to it.
+ * the string `str`. Words are delimited by spaces, tabs, or periods.
+ * It modifies the original string and returns a pointer to it.
  *
  * Return: A pointer to the modified string.
  */

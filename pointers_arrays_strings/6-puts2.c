@@ -6,8 +6,8 @@
  * @str: The input string.
  *
  * Description: This function prints every other character of the string `str`,
- *              starting from the first character. It does not modify the original
- *              string and does not return any value.
+ * starting from the first character. It does not modify the original
+ * string and does not return any value.
  *
  * Return: void.
  */

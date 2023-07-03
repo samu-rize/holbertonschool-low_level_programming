@@ -5,11 +5,13 @@
  * @a: Array of integers.
  * @n: Number of elements in the array.
  *
- * Description: This function takes an array of integers and the number of elements
- *              in the array as input. It reverses the order of the elements in the array.
- *              The function uses two indices, `i` and `j`, starting from the first and last
- *              elements of the array respectively, and swaps the elements until `i` surpasses `j`.
- *              This effectively reverses the order of the elements in the array.
+ * Description: This function takes an array of integers and the number of
+ * elements in the array as input.
+ * It reverses the order of the elements in the array.
+ * The function uses two indices, `i` and `j`, starting from the first
+ * and last elements of the array respectively, and swaps the elements
+ * until `i` surpasses `j`.
+ * This effectively reverses the order of the elements in the array.
  *
  * Return: void.
  */

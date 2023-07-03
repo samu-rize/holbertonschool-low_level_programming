@@ -8,7 +8,8 @@
  * @n: The number of bytes to be copied.
  *
  * Description: This function copies the contents of the source memory area
- *              to the destination memory area up to a specified number of bytes.
+ *              to the destination memory area up to a specified number of
+ *              bytes.
  *
  * Return: A pointer to the destination memory area.
  */

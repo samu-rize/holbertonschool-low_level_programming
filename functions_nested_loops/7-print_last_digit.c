@@ -7,7 +7,8 @@
  * Description: This function takes an integer and prints its last digit.
  * If the integer is negative, it converts it to a positive number and prints
  * the corresponding last digit. It then returns the last digit.
- * If the integer is positive or zero, it simply prints and returns the last digit.
+ * If the integer is positive or zero, it simply prints and returns the last
+ * digit.
  *
  * Return: The last digit of the integer
  */
