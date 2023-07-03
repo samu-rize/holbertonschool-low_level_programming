@@ -9,14 +9,19 @@
  * Return: void
  */
 
-void print(char *s, int i)
+int print(char *s, int i)
 {
+	if (i == 0)
+	{
+		return (0);
+	}
 	_putchar(s[i]);
 	i--;
 	if (i >= 0)
 	{
 		print(s, i);
 	}
+	return (0);
 }
 
 /**
