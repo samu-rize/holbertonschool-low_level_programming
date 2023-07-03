@@ -11,12 +11,12 @@
 
 int print(char *s, int i)
 {
-	if (i == 0)
+	i--;
+	if (i < 0)
 	{
 		return (0);
 	}
 	_putchar(s[i]);
-	i--;
 	if (i >= 0)
 	{
 		print(s, i);
@@ -35,6 +35,6 @@ void _print_rev_recursion(char *s)
 {
 	int i;
 
-	i = strlen(s) - 1;
+	i = strlen(s);
 	print(s, i);
 }
