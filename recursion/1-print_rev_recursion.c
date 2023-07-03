@@ -13,7 +13,7 @@ void print(char *s, int i)
 {
 	_putchar(s[i]);
 	i--;
-	if (i >= 0)
+	if (i > 0)
 	{
 		print(s, i);
 	}
@@ -32,5 +32,4 @@ void _print_rev_recursion(char *s)
 
 	i = strlen(s);
 	print(s, i);
-	_putchar('\n');
 }
