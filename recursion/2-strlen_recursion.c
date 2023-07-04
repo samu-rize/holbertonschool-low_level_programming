@@ -20,7 +20,7 @@ int count(char *s, int i)
 {
 	if (s[i] == '\0')
 	{
-		printf (i + 1);
+		printf ("%d", i + 1);
 		return (0);
 	}
 	if (s[i] != '\0')
