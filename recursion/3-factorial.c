@@ -19,15 +19,13 @@
 
 int factorial(int n)
 {
-	int i = n;
-
-	if (i > 1)
-	{
-		n = factorial(n - 1) * i;
-	}
-	if (i < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	return (n);
+	if (n == 0 || n == 1)
+	{
+		return (1);
+	}
+	return (n * factorial(n - 1));
 }
