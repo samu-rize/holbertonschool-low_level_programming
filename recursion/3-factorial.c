@@ -23,7 +23,11 @@ int factorial(int n)
 
 	if (i > 1)
 	{
-		n = factorial(n--) * i;
+		n = factorial(n - 1) * i;
+	}
+	if (i < -1)
+	{
+		n = factorial(n + 1) * i;
 	}
 	return (n);
 }
