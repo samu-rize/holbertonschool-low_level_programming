@@ -25,9 +25,9 @@ int factorial(int n)
 	{
 		n = factorial(n - 1) * i;
 	}
-	if (i < -1)
+	if (i < 0)
 	{
-		n = factorial(n + 1) * i;
+		return (-1);
 	}
 	return (n);
 }
