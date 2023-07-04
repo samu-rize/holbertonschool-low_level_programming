@@ -20,7 +20,8 @@ int count(char *s, int i)
 {
 	if (s[i] == '\0')
 	{
-		return (i + 1);
+		printf (i + 1);
+		return (0);
 	}
 	if (s[i] != '\0')
 	{
@@ -48,4 +49,5 @@ int _strlen_recursion(char *s)
 
 	i = 0;
 	count(s, i);
+	return (0);
 }
