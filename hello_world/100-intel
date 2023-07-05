@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -f "$CFILE" ] && gcc -S -masm=intel "$CFILE"
+CFILE="main.c"; [ -f "$CFILE" ] && gcc -S -masm=intel "$CFILE"
