@@ -4,7 +4,8 @@
  * main - Program that prints all possible combinations of single-digit numbers
  *
  * Description:
- * This program prints all possible combinations of single-digit numbers from 0 to 9.
+ * This program prints all possible combinations of
+ * single-digit numbers from 0 to 9.
  * It uses nested loops to generate and print the combinations.
  *
  * Return: Always 0 (Success)
@@ -20,11 +21,14 @@ int main(void)
 		{
 			if (j > i)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(',');
-				putchar(' ');
-			}	
+				putchar(i + '0');
+				putchar(j + '0');
+				if ((i != 8) && (j != 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	return (0);
