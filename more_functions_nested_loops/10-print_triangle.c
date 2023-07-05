@@ -5,9 +5,9 @@
  * @s: The size of the triangle
  *
  * Description: This function prints a triangle made of '#' characters.
- *              The triangle has 's' number of rows, where 's' represents the size.
- *              The first row has 's' number of '#' characters, and each subsequent
- *              row has one less '#' character until the last row.
+ *The triangle has 's' number of rows, where 's' represents the size.
+ *The first row has 's' number of '#' characters, and each subsequent
+ *row has one less '#' character until the last row.
  *
  * Return: void
  */

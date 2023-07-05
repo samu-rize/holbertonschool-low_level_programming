@@ -8,7 +8,8 @@
  * 1 if the number is positive, -1 if the number is negative, and 0 if the
  * number is zero.
  *
- * Return: 1 if number is positive, -1 if number is negative, 0 if number is zero
+ * Return: 1 if number is positive, -1 if number is negative, 0 if number is
+ * zero.
  */
 
 int print_sign(int n)

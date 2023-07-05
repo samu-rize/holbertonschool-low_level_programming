@@ -3,7 +3,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints a specific string using the printf function.
+ * Description: This program prints a specific string using the printf
+ * function.
  * Return: Always 0 (Success)
  */
 

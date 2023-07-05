@@ -3,7 +3,8 @@
 /**
  * print_alphabet_x10 - Prints the alphabet in lowercase, 10 times
  *
- * Description: This function prints the lowercase alphabet 10 times, each on a new line
+ * Description: This function prints the lowercase alphabet 10 times,
+ * each on a new line
  *
  * Return: void
  */

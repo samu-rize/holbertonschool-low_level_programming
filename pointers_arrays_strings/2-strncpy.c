@@ -8,9 +8,9 @@
  * @n: Maximum number of characters to copy.
  *
  * Description: This function copies characters from the source string 'src'
- *              to the destination string 'dest' up to a maximum of 'n'
- *              characters. If the length of 'src' is less than 'n', the
- *              remaining characters in 'dest' are filled with null terminators.
+ * to the destination string 'dest' up to a maximum of 'n'
+ * characters. If the length of 'src' is less than 'n', the
+ * remaining characters in 'dest' are filled with null terminators.
  *
  * Return: Pointer to the destination string 'dest'.
  */

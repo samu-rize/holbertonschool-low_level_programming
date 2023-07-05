@@ -6,12 +6,13 @@
  * @s: The string to search in.
  * @a: The substring to find.
  *
- * Description: This function searches for the first occurrence of the substring
- *              `a` in the string `s`. If the substring is found, a pointer to the
- *              first occurrence is returned. If the substring is not found, NULL
- *              is returned.
+ * Description: This function searches for the first occurrence of the
+ * substring `a` in the string `s`. If the substring is found,
+ * a pointer to the first occurrence is returned. If the substring
+ * is not found, NULL is returned.
  *
- * Return: A pointer to the first occurrence of the substring, or NULL if not found.
+ * Return: A pointer to the first occurrence of the substring, or NULL if not
+ * found.
  */
 
 char *_strstr(char *s, char *a)
