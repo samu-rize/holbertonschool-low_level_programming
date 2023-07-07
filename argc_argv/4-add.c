@@ -10,13 +10,13 @@
  * Return: Always 0 (Success).
  */
 
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int i, s = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i] < '0' || argv[i] > '9')
+		if (argv[i][0] < '0' || argv[i][0] > '9')
 		{
 			printf("Error\n");
 			return (1);
