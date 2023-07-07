@@ -12,16 +12,21 @@
 
 int main(int argc, char **argv)
 {
-	int i, s = 0;
+	int i, j, s = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i][0] < '0' || argv[i][0] > '9')
+		char *arg = argv[i];
+
+		for (j = 0; *arg != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (arg[j] < '0' || arg[j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		s += atoi(argv[i]);
+		s += atoi(arg);
 	}
 	printf("%d\n", s);
 	return (0);
