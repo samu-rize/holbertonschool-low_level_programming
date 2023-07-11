@@ -3,11 +3,13 @@
 #include <string.h>
 
 /**
- * _strdup - Creates an array of characters dynamically with the given size and initializes
+ * _strdup - Creates an array of characters dynamically with
+ * the given size and initializes
  *                each element with the specified character.
  * @str: The size of the array to be created.
  *
- * Return: A pointer to the dynamically allocated array if successful, otherwise NULL.
+ * Return: A pointer to the dynamically allocated array if
+ * successful, otherwise NULL.
  *
  */
 
@@ -22,7 +24,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		l= strlen(str);
+		l = strlen(str);
 		ptr = (char *)malloc((l + 1) * sizeof(char));
 		if (ptr == 0)
 		{
@@ -32,7 +34,7 @@ char *_strdup(char *str)
 		{
 			for (i = 0; i < l; i++)
 			{
-				ptr[i] = str [i];
+				ptr[i] = str[i];
 			}
 			ptr[i] = '\0';
 			return (ptr);
