@@ -18,17 +18,15 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	unsigned int i, ls1, ls2;
 
-	if ((s1 == NULL) & (s2 == NULL))
+	
+	
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = '\0';
 	}
-	else if (s1 == NULL)
-	{
-		return (s2);
-	}
-	else if (s2 == NULL)
-	{
-		return (s1);
+    if (s2 == NULL)
+	{ 
+		s2 = '\0';
 	}
 		ls1 = strlen(s1);
 		ls2 = strlen(s2);
