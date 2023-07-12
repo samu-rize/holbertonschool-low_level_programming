@@ -3,54 +3,40 @@
 #include <string.h>
 
 /**
- * str_concat - Creates an array of characters dynamically with
- * the given size and initializes
- *                each element with the specified character.
- * @s1: the first string.
- * @s2: the second string.
+ * str_concat - Concatenates two strings.
+ * @s1: The first string.
+ * @s2: The second string.
  *
- * Return: A string that contain the first and second strings, otherwise NULL.
- *
+ * Return: A newly allocated string containing s1 followed by s2,
+ *         or NULL on failure.
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int ls1 ;
-	int ls2 ;
-	int i ;
-	
+	int len1, len2, i, j;
+
 	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+
+	ptr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; i < len1; i++)
+		ptr[i] = s1[i];
+
+	for (j = 0; j < len2; j++)
 	{
-		s1 = '\0';
-	}
-    if (s2 == NULL)
-	{ 
-		s2 = '\0';
-	}
-		ls1 = strlen(s1);
-		ls2 = strlen(s2);
-		ptr = (char *)malloc((ls1 + ls2 + 1) * sizeof(char));
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-			for (i = 0; i < (ls1 + ls2); i++)
-			{
-				if (i < ls1)
-				{
-					ptr[i] = s1[i];
-				}
-				else
-				{
-					ptr[i] = s2[i - ls1];
-				}
-			}
-			ptr[i] = '\0';
-			return (ptr);
-			free(ptr);
-		}
+		ptr[i] = s2[j];
+		i++;
 	}
 
+	ptr[i] = '\0';
+
+	return (ptr);
+}
