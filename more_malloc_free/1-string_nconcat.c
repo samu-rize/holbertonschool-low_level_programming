@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * string_nconcat - Concatenates two strings up to n bytes.
  * @s1: The first string.
@@ -9,6 +10,7 @@
  * Return: A pointer to the newly allocated concatenated string.
  *         If malloc fails, the function returns NULL.
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
