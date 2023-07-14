@@ -2,13 +2,15 @@
 #include <stdlib.h>
 
 /**
- * free_grid - Frees a 2-dimensional array of integers.
- * @grid: The 2-dimensional array of integers to be freed.
- * @height: The height of grid.
+ * malloc_checked - Allocates memory using malloc.
+ * @b: The number of bytes to allocate.
+ *
+ * Return: A pointer to the allocated memory.
+ *         If malloc fails, the function terminates with status code 98.
  */
 void *malloc_checked(unsigned int b)
 {
-	char *ptr;
+	void *ptr;
 
 	ptr = malloc(b);
 	if (ptr == NULL)
