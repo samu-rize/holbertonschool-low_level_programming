@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 #include <string.h>
 /**
@@ -13,14 +12,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned short int i, j;
+	unsigned short int len, i, j;
 
-	ptr = malloc(n * 2 + 1 * (sizeof(unsigned short int)));
+	len = strlen(s1);
+	ptr = malloc((len + n + 1) * sizeof(unsigned short int));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < n; i++)
+	for (i = 0; i < len; i++)
 	{
 		ptr[i] = s1[i];
 	}
