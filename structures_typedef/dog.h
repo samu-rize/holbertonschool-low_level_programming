@@ -2,14 +2,12 @@
 #define DOG_HF
 
 /**
- * init_dog - Initializes a struct dog
- * @d: Pointer to the struct dog to be initialized
+ * struct dog - Struct to hold dog information
  * @name: Name of the dog
  * @age: Age of the dog
  * @owner: Owner of the dog
  *
- * Description: This function initializes a struct dog with the provided name,
- *              age, and owner values.
+ * Description: This struct is used to store information about dogs.
  */
 
 struct dog
