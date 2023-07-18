@@ -5,7 +5,7 @@
  * @d: Pointer to the dog to be freed
  *
  * Description: This function frees the memory allocated for a dog structure.
- * 
+ *
  * Return: None
  */
 
