@@ -9,7 +9,7 @@
  * Return: None
  */
 
-void free_dog(dog_t *d);
+void free_dog(dog_t *d)
 {
 	if (d)
 	{
