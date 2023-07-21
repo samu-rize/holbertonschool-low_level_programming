@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	if ((argc != 4) || argv[3] == NULL)
+	/** if ((argc != 4) || argv[3] == NULL)
 	{
 		printf("Error\n");
-		return (9);
-	}
+		return (98);
+	}**/ 
 
 	op_func = get_op_func(argv[2]);
 
