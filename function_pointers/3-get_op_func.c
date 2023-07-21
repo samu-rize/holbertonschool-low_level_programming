@@ -15,7 +15,7 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -25,12 +25,13 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	for (i = 0; (ops + i)->op != NULL ; i++)
+	while ((ops + i)->op != NULL)
 	{
 		if (strcmp(s, (ops + i)->op) == 0)
 		{
 			return ((ops + i)->f);
 		}
+		i++;
 	}
 	return (NULL);
 }
