@@ -1,26 +1,34 @@
-#include "list.h"
-
+#include "lists.h"
 /**
- * print_list - function that print all elements of a list
+ * add_node - Adds a new node at the beginning of a list_t list.
+ * @head: A pointer to the pointer to the head of the list.
+ * @str: The string to be added as the data of the new node.
  *
- * @h: the varible with type list_t
- * Return: the number of nodes
+ * Return: A pointer to the newly created node. If memory allocation fails,
+ *         the function returns NULL.
  */
-list_t *add_node(list_t **head, const char *str)
-{
-	list_t *new;
+list_t *add_node(list_t **head, const char *str) {
+
+    list_t *new;
 	int i;
 
-	new = malloc(sizeof(list_t));
+	if (str == NULL)
+        return (NULL);
 
-	if (!new)
-		return (NULL);
+	new = (list_t *)malloc(sizeof(list_t));
+
+    if (new == NULL)
+	{
+        return (NULL);
+	}
 
 	for (i = 0; str[i] != '\0'; i++);
 
-	new->str = strdup(str);
+    new->str = strdup(str);
 	new->len = i;
-	new->next = (*head);
+    new->next = *head;
 
-	return (new);
+    *head = new;
+
+    return (new);
 }
