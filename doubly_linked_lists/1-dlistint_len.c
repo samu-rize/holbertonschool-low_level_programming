@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * dlistint_len - function that returns number of elements in a linked list_t list.
+ * dlistint_len - function that returns number of elements in a linked
+ * dlistint_t list.
  *
- * @h: the varible with type list_t
+ * @h: the varible with type dlistint_t
  * Return: the number of nodes
  */
 size_t dlistint_len(const dlistint_t *h)
