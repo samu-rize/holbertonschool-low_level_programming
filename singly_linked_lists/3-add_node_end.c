@@ -20,12 +20,16 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (str)
 	{
 		new->str = strdup(str);
-		if (!str || !new)
+		if (!new)
+		{
+			return (NULL);
+		}
+		new->len = strlen(new->str);
+		if (!new->str)
 		{
 			free(new);
 			return (NULL);
 		}
-		new->len = strlen(new->str);
 	}
 
 	if (ptr)
