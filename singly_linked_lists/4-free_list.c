@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_list - function that print all elements of a list
+ * free_list - Frees all the nodes of a linked list.
+ * @head: A pointer to the head of the linked list.
  *
- * @h: the varible with type list_t
- * Return: the number of nodes
+ * Return: void.
  */
 void free_list(list_t *head)
 {
