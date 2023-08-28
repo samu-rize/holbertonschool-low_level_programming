@@ -1,9 +1,10 @@
-#ifndef FILEIO_H
-#define FILEIO_H
+#ifndef MAIN_IO
+#define MAIN_IO
 
-#include <stdio.h>
-#include <fcntl.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include <fcntl.h>
+
 ssize_t read_textfile(const char *filename, size_t letters);
 
 #endif
