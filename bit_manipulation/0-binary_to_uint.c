@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_name - Prints a name using a function pointer.
- * @name: The name to print.
- * @f: A pointer to the function used to print the name.
+ * binary_to_uint - Converts a binary string to an unsigned integer.
+ * @b: The binary string to convert.
+ *
+ * Return: The equivalent unsigned integer, or 0 if conversion fails.
  */
 unsigned int binary_to_uint(const char *b)
 {
