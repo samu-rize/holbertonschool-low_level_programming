@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * append_text_to_file - function that append text to file.
  * @filename: file path
